@@ -39,7 +39,7 @@ class Salary extends Component {
   }
   handleSalarySubmit = event => {
         event.preventDefault();
-        if(!(event.target[3].value==event.target[4].value)){
+        if(!(event.target[3].value===event.target[4].value)){
               window.alert("The bank account number you entered does not match ")
         }
         else{
@@ -88,7 +88,7 @@ class Salary extends Component {
             .catch(err => {
               console.log(err);
           console.log(err.response);
-          if(err.response.status==403){
+          if(err.response.status===403){
             window.alert(err.response.data) ;}
             });
         }
@@ -115,7 +115,7 @@ class Salary extends Component {
   handleSalaryEditUpdate = (info, newInfo) => {
 console.log("eeeeeeeeeeeeeeeeeeeeddddddddddddddddddddddddd")
     newInfo.preventDefault();
-    if(!(newInfo.target[3].value==newInfo.target[4].value)){
+    if(!(newInfo.target[3].value===newInfo.target[4].value)){
       window.alert("The bank account number you entered does not match ")
 }
 else{

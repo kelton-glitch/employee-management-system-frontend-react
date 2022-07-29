@@ -84,7 +84,7 @@ class DashboardHR extends Component {
     // var sidebarV = React.findDOMNode( this.refs.sidebar);
     // sidebarV.style.disply="none";
     
-    if(this.state.checked==true){ 
+    if(this.state.checked===true){ 
        // document.getElementById("sidebar").setAttribute("style", "display:none")
       document.getElementById("sidebar").setAttribute("class", "display-none");
     }
